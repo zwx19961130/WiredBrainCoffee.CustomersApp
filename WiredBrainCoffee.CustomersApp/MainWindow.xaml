@@ -5,23 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WiredBrainCoffee.CustomersApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="20">
+        Title="MainWindow" Height="600" Width="1200" FontSize="20">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
             <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
         
         
         <!--Main menu-->
-        <Menu>
+        <Menu Grid.ColumnSpan="2">
             <MenuItem Header="_View" Grid.Row="0">
                 <MenuItem Header="_Customers" />
                 <MenuItem Header="_Products" />
@@ -72,7 +72,7 @@
         
         
         <!--Statusbar-->
-        <StatusBar Grid.Row="3">
+        <StatusBar Grid.Row="3" Grid.ColumnSpan="2">
             <StatusBarItem Content="Wired Brain Coffee" />
         </StatusBar>
         
