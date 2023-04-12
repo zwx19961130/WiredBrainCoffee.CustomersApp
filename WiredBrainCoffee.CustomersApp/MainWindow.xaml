@@ -38,14 +38,43 @@
         
         <!--Customer list-->
         <StackPanel Grid.Row="2" Background="#777">
+            <!--3 Buttons-->
             <StackPanel Orientation="Horizontal">
-                <Button Width="75">
+                <Button Width="75" Margin="10">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Images/add.png" Height="18" />
+                        <TextBlock Text="Add" />
                     </StackPanel>
                 </Button>
+                <Button Content="Delete" Width="75" Margin="0 10 10 10"/>
+                <Button Margin="0 10 10 10">
+                    <Image Source="/Images/move.png" Height="18" />
+                </Button>
             </StackPanel>
+            
+            <!--listview-->
+            <ListView Margin="10 0 10 10">
+                <ListViewItem>Julia</ListViewItem>
+                <ListViewItem>Alex</ListViewItem>
+                <ListViewItem>Thomas</ListViewItem>
+            </ListView>
         </StackPanel>
+        
+        
+        <!--Customer detail-->
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="10">
+            <TextBlock Text="Firstname:" />
+            <TextBox />
+            <TextBlock Text="Lastname:"/>
+            <TextBox/>
+            <CheckBox Margin="0 10 0 0" Content="Is Developer"/>
+        </StackPanel>
+        
+        
+        <!--Statusbar-->
+        <StatusBar Grid.Row="3">
+            <StatusBarItem Content="Wired Brain Coffee" />
+        </StatusBar>
         
     </Grid>
 </Window>
