@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WiredBrainCoffee.CustomersApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontSize="20">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        
+        
+        <!--Main menu-->
+        <Menu>
+            <MenuItem Header="_View" Grid.Row="0">
+                <MenuItem Header="_Customers" />
+                <MenuItem Header="_Products" />
+            </MenuItem>
+        </Menu>
+        
+        <!--Header-->
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Background="#F05A28" Orientation="Horizontal">
+            <Image Source="/Images/logo.png" Width="100" />
+            <TextBlock Text="Customers App" Foreground="White" />
+            <TextBlock Text="Version 1.0" Foreground="#333333" />
+        </StackPanel>
+        
+        
+        <!--Customer list-->
+        <StackPanel Grid.Row="2" Background="#777">
+            <StackPanel Orientation="Horizontal">
+                <Button Width="75">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Images/add.png" Height="18" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        
     </Grid>
 </Window>
